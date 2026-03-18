@@ -58,7 +58,8 @@ nav {
     font-family: var(--font-one);
     font-size: 1.5rem;
     width: 10%;
-    background-color: lightgray;
+    background:linear-gradient(rgba(0, 128, 0, 0.4), rgba(0, 128, 0, 0.4)), url(/img/chat.jpg);
+    
     padding: 20px;
     height: 200vh;
     display: flex; 
@@ -75,14 +76,57 @@ nav {
     color: gold;
 }
 
+/* Send Message */
+
+.send-chat-container {
+  width:  80%;
+  margin: 50px auto;
+}
+
+.send-message {
+  display: flex;
+  gap: 10px;
+}
+
+.message-area {
+  flex: 1;
+  resize: none;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--colorThree);
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.message-area:focus {
+  border-color: var(--colorOne);
+  box-shadow: 0 0 5px rgba(10, 221, 6, 0.3);
+}
+
+.chat-send-button {
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background: var(--colorOne);
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.chat-send-button:hover {
+  background:  var(--colorOne);
+}
+
+
 
 
 /* CHATBOX */
 .chat-container {
   width: 100%; 
-  background-color: var(--colorThree);
+  background-image: url(/img/chat.jpg);
+  
   /* background-color: rgba(0, 0, 0, 0.843); */
-
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -98,19 +142,6 @@ nav {
   position: relative;
   margin: 50px auto;
   color: white;
-}
-
-.send-message{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    gap: 20px;
-    border: red solid 10px;
-}
-
-.message-area{
-    width: 100px;
 }
 
 .header-picture {
@@ -148,8 +179,8 @@ nav {
 }
 
 .actions {
-  background: #555;
-  color: white;
+  background: white;
+  color: black;
   border-radius: 10px;
   padding: 5px;
   align-items: center;
@@ -172,3 +203,6 @@ nav {
    color: white;
    text-align: center;
 }
+
+
+
