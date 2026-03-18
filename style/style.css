@@ -11,6 +11,7 @@
     /* Color */
     --colorOne: #00A86B;
     --colorTwo: #000000;
+    --colorThree: #F2EAE0;
 }
 
 /* NAVBAR */
@@ -51,9 +52,9 @@ nav {
 /* SIDEBAR */
 .sidenav {
   height: 100%;
-  width: 100px;
+  width: 160px; /* match your .main margin-left */
   position: fixed;
-  top: 10;
+  top: 0;
   left: 0;
   background-color: var(--colorOne);
   overflow-x: hidden;
@@ -72,16 +73,33 @@ nav {
   color: #f1f1f1;
 }
 
+/* MAIN CONTENT */
 .main {
-  margin-left: 160px; 
-  font-size: 28px; 
-  padding: 0px 10px;
+  margin-left: 160px;
+  font-size: 28px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+/* CHATBOX */
+.chatbox {
+
+  width: 100%; 
+  height: 100vh; 
+  background-color: var(--colorThree);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
+
+.box{
+    width: 50%;
+    height: 20%;
+    border: 10px solid red;
+
+}
+
+
 
 /* FOOTER */
 
@@ -90,7 +108,7 @@ nav {
    left: 0;
    bottom: 0;
    width: 100%;
-   background-color: red;
+   background-color: #00A86B;
    color: white;
    text-align: center;
 }
