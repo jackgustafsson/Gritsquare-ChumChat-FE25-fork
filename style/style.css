@@ -147,9 +147,8 @@ nav {
 .actions {
   background: #555;
   color: white;
-  border-radius: 25px;
-  padding: 10px 15px;
-  display: flex;
+  border-radius: 10px;
+  padding: 5px;
   align-items: center;
   gap: 10px;
 }

@@ -23,9 +23,14 @@ export const RenderMessageBox = (sender, message) => {
     TimeStamp.classList = 'timestamp'
     TimeStamp.textContent = new Date();
 
-    const comments = document.createElement('div')
+    const ChatReply = document.createElement('p')
+    ChatReply.innerHTML = 'Reply'
+
+
+    const comments = document.createElement('textarea')
+    comments.placeholder = 'Reply...'
     comments.classList = 'actions'
 
-    ChatBox.append(ChatBoxSender, ChatBoxMessage, ChatButtonDelete, TimeStamp, comments);
+    ChatBox.append(ChatBoxSender, ChatBoxMessage, ChatButtonDelete, TimeStamp, ChatReply, comments);
     ChatContainer.appendChild(ChatBox);
 }
