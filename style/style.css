@@ -73,7 +73,7 @@ nav {
 
 
 /* CHATBOX */
-.chatbox {
+.chatcontainer {
   width: 100%; 
   height: 100vh; 
   background-color: var(--colorThree);
@@ -84,7 +84,7 @@ nav {
   gap: 20px;
 }
 
-.box{
+.chat-box{
     margin-top: 10px;
     width: 40%;
     height: 20%;
