@@ -20,9 +20,10 @@ A simple real-time chat application where users can send messages to each other.
 | Preview                                                         | Hex       | Usage                         |
 | --------------------------------------------------------------- | --------- | ----------------------------- |
 | ![Primary Green](https://img.shields.io/badge/Primary%20Green-00A86B?style=for-the-badge) | `#00A86B`|
-| ![#000000](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<000000>?style=for-the-badge) | `#000000` |                   |
-| ![#F2EAE0](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<F2EAE0>?style=for-the-badge) `#F2EAE0` |                     |
-| ![#FFFFFF](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<FFFFFF>?style=for-the-badge) | `#FFFFFF` | 
+| ![#000000](https://img.shields.io/badge/<LABEL>-<000000>?style=for-the-badge) | `#000000` |    
+| ![#000000](https://img.shields.io/badge/<LABEL>-<F2EAE0>?style=for-the-badge) | `#F2EAE0` |      
+| ![#000000](https://img.shields.io/badge/<LABEL>-<FFFFFF>?style=for-the-badge) | `#FFFFFF` |           
+
 
 ---
 
