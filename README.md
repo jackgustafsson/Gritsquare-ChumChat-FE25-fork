@@ -86,6 +86,16 @@ We welcome contributions! To keep the project organized, please follow these ste
 
 ## License
 
-MIT License
+MIT License (Modified)
+
+Copyright (c) 2026 ChumChat
+
+Permission is hereby granted to any person obtaining a copy of this application and associated documentation files (the "application"), to use, copy, modify, and distribute the application, subject to the following conditions:
+
+* The original authors must be credited.
+* Any modifications must be clearly stated.
+* This application may not be used for commercial purposes without permission.
+
+THE APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ---
