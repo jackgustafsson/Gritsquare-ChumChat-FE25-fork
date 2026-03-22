@@ -1,7 +1,16 @@
-import { reference, db, messagesRef, repliesRef } from "./firebase.js";
+import { auth, reference, db, messagesRef, repliesRef } from "./firebase.js";
 import { push, set, onValue, remove, ref, get } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
-import { RenderMessageBox } from "./RenderFunctions/RenderMessageBox.js";
+import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
+
 import { RenderMessages } from "./RenderFunctions/RenderMessages.js"
+
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        console.log("Logged in user:", user.uid, user.email);
+    } else {
+        console.log("No user logged in");
+    }
+});
 
 const hello = onValue(reference, snapshot => {
     const data = snapshot.val();
@@ -18,19 +27,4 @@ const hello = onValue(reference, snapshot => {
 onValue(messagesRef, snapshot => {
     hello();
 })
-
-// onValue(messagesRef, snapshot => {
-//     const messages = snapshot.val();
-//     console.log(messages);
-
-//     document.querySelector(".chat-container").innerHTML = "";  
-//     for (let id in messages) {
-//         const msg = messages[id];
-//         RenderMessageBox(currentUser, msg);  
-//     }
-
-// }, error => {
-//     console.error("Firebase read failed:", error);
-//     alert("Couldn't get messages from database.")
-// });
 

@@ -1,34 +1,16 @@
-import { usersRef, db } from "./firebase.js";
-import { push, set, get, update } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
+import { auth } from "../firebase.js";
+import { signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
+const formBody = document.querySelector(".form-body");
 
-export const loginUser = async (username, password) => {
-    try {
-        const snapshot = await get(usersRef);
+formBody.addEventListener("submit", async(e) => {
+    e.preventDefault();
 
-        if (!snapshot.exists()) {
-            alert("No users found");
-            return;
-        }
+    const formData = new FormData(formBody);
 
-        const users = snapshot.val();
-        let foundUser = null;
+    const email = formData.get("email");
+    const password = formData.get("password");
 
-        for (let id in users) {
-            if (users[id].username === username && users[id].password === password) {
-                foundUser = users[id];
-                break;
-            }
-        }
+    signInWithEmailAndPassword(auth, email, password);
+    console.log(auth.currentUser);
 
-        if (foundUser) {
-            currentUser = foundUser;
-            alert("Logged in!");
-        } else {
-            alert("Wrong username or password");
-        }
-
-    } catch (error) {
-        console.error(error);
-        alert("Something went wrong");
-    }
-};
+});

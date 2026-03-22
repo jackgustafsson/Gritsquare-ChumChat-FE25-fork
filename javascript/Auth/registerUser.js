@@ -1,10 +1,11 @@
 import { usersRef } from "../firebase.js";
 import { push, set } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-database.js";
 import { setCurrentUser } from "./auth.js";
-import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
+import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-auth.js";
+import { auth } from "../firebase.js";
+
 
 const formBody = document.querySelector(".form-body");
-const auth = getAuth();
 
 formBody.addEventListener("submit", async(e) => {
     e.preventDefault();
@@ -19,7 +20,7 @@ formBody.addEventListener("submit", async(e) => {
 
     const userId = await createUserWithEmailAndPassword(auth, email, password)
 
-    registerUser(userId.user.uid, pfpurl)
+    registerUser(await userId.user.uid, pfpurl)
 });
 
 const registerUser = (userId, pfpUrl) => {
