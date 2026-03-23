@@ -49,11 +49,11 @@ nav {
   flex: 1;
   display: flex;
   flex-direction: row;
-  background-image: url(/img/chat.jpg);
+  background-image: url(../img/chat.jpg);
 }
 
 .dark-mode {
-     background-image: url(/img/chatDark.jpg);
+     background-image: url(../img/chatDark.jpg);
 }
 
 .content {
@@ -76,7 +76,7 @@ nav {
   resize: none;
   padding: 12px 15px;
   border-radius: 15px;
-  font-size: 15px;
+  font-size: 1rem;
   font-family: var(--font-one);
   background: #f7f7f7;
   transition: all 0.2s ease;
@@ -224,6 +224,52 @@ nav {
    color: var(--colorFour);
    text-align: center;
 }
+
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--colorFour);
+  transition: 0.3s;
+}
+
+/* Mobilvy */
+@media (max-width: 768px) {
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--colorOne);
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    z-index: 100;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
 
 
 

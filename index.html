@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -34,21 +34,26 @@
         </ul>
     </nav>
 
+    <ul class="menu">
+        <button id="darkmodeButton">Toggle Dark Mode</button>
+        <a href="#about">ROM1</a>
+        <a href="#services">MEMES</a>
+        <li id="user-area"></li>
+    </ul>
+    </nav>
+
     <main class="main" id="main">
-        <div class="sidenav" id="sidenav">
-            <a href="#about">ROM1</a>
-            <a href="#services">MEMES</a>
-        </div>
+        <div class="sidenav" id="sidenav"></div>
 
         <div class="content">
             <div class="send-chat-container">
                 <form class="send-message" id="form-post">
-                    <input placeholder="Skriv ett meddelande..." type="text" class="message-area">
-                    <button type="submit" class="chat-send-button">Send</button>
+                    <input placeholder="Skriv ett meddelande..." type="text" name="message" class="message-area" />
+                    <button type="submit" class="chat-send-button">
+                        Send
+                    </button>
                 </form>
             </div>
-
-
 
             <div class="chat-container"></div>
         </div>
@@ -60,9 +65,10 @@
             <li><a href="">Contact</a></li>
         </ul>
     </footer>
-    <script type="module" src="/javascript/main.js"></script>
-    <script type="module" src="/javascript/function/darkmode.js"></script>
+    <script type="module" src="javascript/main.js"></script>
+    <script type="module" src="javascript/function/darkmode.js"></script>
     <script type="module" src="javascript/function/hamburgermeny.js"></script>
+    <script type="module" src="./javascript/MessageFunctions/sendMessage.js"></script>
 </body>
 
 </html>

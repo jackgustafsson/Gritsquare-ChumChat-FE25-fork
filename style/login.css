@@ -11,7 +11,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url(/img/chat.jpg);
+  background: url(../img/chat.jpg);
 }
 
 /* Centering container */
@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url(/img/chat.jpg);
+  background: url(../img/chat.jpg);
   font-family: var(--font-one);
 }
 
