@@ -24,8 +24,3 @@ onValue(reference, snapshot => {
 
     RenderMessages(users, messages)
 })
-
-onValue(messagesRef, snapshot => {
-    hello();
-})
-
