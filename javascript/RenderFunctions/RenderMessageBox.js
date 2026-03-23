@@ -1,9 +1,11 @@
 import { deleteMessage } from "../MessageFunctions/deleteMessage.js";
 import { auth } from "../firebase.js";
 
-const user = auth.currentUser;
 
 export const RenderMessageBox = async(sender, message, messageKey) => {
+
+    const user = auth.currentUser;
+    
     const ChatContainer = document.querySelector(".chat-container");
 
     const ChatBox = document.createElement("div");
@@ -24,14 +26,20 @@ export const RenderMessageBox = async(sender, message, messageKey) => {
 
     ChatBox.append(UserInfo)
 
+console.log(user.uid)
+console.log(message.user_id)
+
+
+
     if(user){
-        if(currentUser.uid === message.user_id){
+        if(user.uid === message.user_id){
+            console.log("WE HAVE A MATCH!!")
             const ChatButtonDelete = document.createElement('button')
             ChatButtonDelete.innerText = 'X'
             ChatButtonDelete.classList = 'close-button'
 
             ChatButtonDelete.addEventListener("click", () => {
-                console.log(`${message.message_id} getting clicked` )
+                // console.log(`${message.message_id} getting clicked` )
                 deleteMessage(messageKey)
             })
             ChatBox.appendChild(ChatButtonDelete)
@@ -41,7 +49,7 @@ export const RenderMessageBox = async(sender, message, messageKey) => {
 
 
     const ChatBoxMessage = document.createElement("p");
-    console.log(message)
+    // console.log(message)
     ChatBoxMessage.textContent = message.message;
     ChatBoxMessage.className = 'comments-chat'
 
