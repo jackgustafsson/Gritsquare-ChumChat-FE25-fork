@@ -22,6 +22,7 @@ Before starting, please contact me on Discord: **andionlyfans**.
 - [ ] Post picture in the chat
 - [ ] Make it so user can't send vulnerable code
 - [ ] Add a second chat room
+- [ ] Add a terms of service
 
 If you have other ideas, please contact me.
 
