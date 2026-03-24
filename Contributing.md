@@ -16,18 +16,19 @@ Before starting, please contact me on Discord: **andionlyfans**.
 ---
 
 ## Features ChumChat Need
-
+- [X] Filter for inappropriate or bad words 
 - [ ] Like/Dislike system for posts and answers  
 - [ ] Emoji reactions 
-- [ ]  
+- [ ] Post picture in the chat
+- [ ] Make it so user can't send vulnerable code
+- [ ] Add a second chat room
 
 If you have other ideas, please contact me.
 
 ---
 
 ## Features ChumChat want
-
-- [X] Filter for inappropriate or bad words  
 - [ ] Custom cursor 
+- [ ] Custom sound when sending a message 
 
 If you have other ideas, feel free to contact me.
