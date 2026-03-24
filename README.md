@@ -90,6 +90,7 @@ We welcome contributions! To keep the project organized, please follow these ste
 * [Jack](https://github.com/jackgustafsson) (BACKEND/FRONTEND) (Weather)
 * [Ali](https://github.com/Hammadi15) (UX/FRONTEND)
 * [Mohammed](https://github.com/mohammed-alpha91) (PROFANITY)
+* [Jenny](https://github.com/jenhangso) (Like & favorite)
 
 
 

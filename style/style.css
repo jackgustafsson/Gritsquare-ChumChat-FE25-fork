@@ -215,6 +215,18 @@ nav {
   font-weight: bold;
 }
 
+.reply-button{
+  background: linear-gradient(135deg, #34d399, #10b981);
+  border: none;
+  margin: 10px;
+  padding: 15px 24px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 /* Like & favorite */
 .action-bar {
   display: flex;

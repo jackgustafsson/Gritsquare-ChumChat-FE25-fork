@@ -126,16 +126,17 @@ if (nestAmount >= 5) {
     const replyForm = document.createElement("form");
     replyForm.className = "reply-form";
 
-    const ChatReply = document.createElement("p");
-    ChatReply.innerHTML = "Reply";
+    // const ChatReply = document.createElement("p");
+    // ChatReply.innerHTML = "Reply";
 
     const comments = document.createElement("input");
     comments.placeholder = "Reply...";
-    comments.classList = "actions";
+    comments.classList = "message-area";
     comments.name = "replyText";
 
     const submitReply = document.createElement("button");
     submitReply.type = "submit";
+    submitReply.classList = 'reply-button'
     submitReply.textContent = "Submit Reply";
 
     replyForm.addEventListener("submit", (e) => {
@@ -146,7 +147,7 @@ if (nestAmount >= 5) {
         sendReply(messageKey, replyText);
     });
 
-    replyForm.append(ChatReply, comments, submitReply);
+    replyForm.append(comments, submitReply);
     ChatBox.append(replyForm);
 }
 
