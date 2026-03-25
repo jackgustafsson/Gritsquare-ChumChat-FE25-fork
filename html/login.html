@@ -12,13 +12,22 @@
 
   <body>
     <nav>
-     <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat"></a> 
-      <ul class="menu">
-        <li><a href="#">Register/Log in</a></li>
-      </ul>
+        <a href="../index.html"><img src="../img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat" /></a>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+         <ul class="menu">
+             <button id="darkmodeButton">
+                <img src="../img/svg/white.png">
+             </button>
+           
+        </ul>
     </nav>
 
-    <div class="container">
+    <div class="container" id="main">
       <div class="register-card">
         <div class="header">
           <h1>LOG IN</h1>
@@ -41,11 +50,17 @@
       </div>
     </div>
      <footer class="footer">
+        <div id="weather-container">
+            <h3 id="headerForWeather"></h3>
+        </div>
         <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+             <li><a href="#">ROM1</a></li> 
+           <li><a href="#">MEMES</a></li> 
         </ul>
     </footer>
     <script type="module" src="../javascript/Auth/loginUser.js"></script>
   </body>
+  <script type="module" src="../javascript/function/darkmode.js"></script>
 </html>

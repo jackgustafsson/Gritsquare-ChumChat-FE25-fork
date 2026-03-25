@@ -1,9 +1,11 @@
 function darkMode() {
     const darkmodeButton = document.querySelector('#darkmodeButton');
     const main = document.querySelector('#main');
-    const sidenav = document.querySelector('#sidenav')
-    const sidenava = document.querySelector('.sidenav')
-
+    const footer = document.querySelector('footer')
+    const nav = document.querySelector('nav')
+    const sendChatInputMessage = document.querySelector('.send-message')
+    const sendChatInputArea = document.querySelector('.message-area')
+   
     if (!darkmodeButton || !main) {
         console.error("Element saknas i DOM");
         return;
@@ -11,10 +13,12 @@ function darkMode() {
 
     darkmodeButton.addEventListener('click', () => {
         main.classList.toggle("dark-mode");
-        sidenav.classList.toggle('dark-modenav')
-        sidenava.classList.toggle('dark-modeA')
+        footer.classList.toggle('footer-dark')
+        sendChatInputMessage.classList.toggle('send-message-dark')
+        sendChatInputArea.classList.toggle('message-area-dark')
+        nav.classList.toggle('nav-dark')
+
     });
 }
 
-// Kör funktionen när skriptet laddas
 darkMode();
