@@ -1,0 +1,49 @@
+/* POP UP CSS */
+
+
+
+/* Blur + disable background */
+#mainContent.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Popup overlay */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Popup box */
+.popup-content {
+  background: #F2EAE0;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+/* Button disabled */
+#acceptBtn {
+  margin-top: 10px;
+  padding: 10px;
+  background: gray;
+  border: none;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Button active */
+#acceptBtn.active {
+  background: #00A86B;
+  cursor: pointer;
+}

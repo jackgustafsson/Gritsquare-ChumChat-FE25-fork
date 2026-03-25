@@ -19,8 +19,42 @@
     <title>Chumchat</title>
 
 </head>
-
 <body>
+
+  <!-- 👇 Wrap ALL your website content -->
+  <div id="mainContent">
+    <!-- your whole app here -->
+  </div>
+
+  <!-- Terms Popup -->
+  <div id="mainContent">
+  <!-- your app -->
+</div>
+
+<div id="termsPopup" class="popup">
+  <div class="popup-content">
+  <h2>Terms & Conditions</h2>
+<ul>
+  <li>Be respectful and kind.</li>
+  <li>No offensive or abusive content.</li>
+  <li>Do not share private or personal data.</li>
+  <li>Use this app according to local laws.</li>
+  <li>ChumChat team may revise these terms of service at any time without notice.</li>
+  <li>Failure to comply with these terms may result in removal of your account.</li>
+  <li>Have fun and enjoy the ChumChat!</li>
+</ul>
+
+    <div>
+      <input type="checkbox" id="agreeCheckbox">
+      <label>I agree</label>
+    </div>
+
+    <button id="acceptBtn" disabled>Accept</button>
+  </div>
+</div>
+<link rel="stylesheet" href="style/popup.css">
+  <script src="javascript/popup.js"></script>
+</body>
     <nav>
         <a href="index.html"><img src="img/ChumChatLogotyp.png" class="logo" alt="loga för Chumchat" /></a>
         <div class="hamburger" id="hamburger">
@@ -68,6 +102,12 @@
         <div class="chat-container"></div>
     </div>
 </main>
+
+
+
+
+
+
 
     <footer class="footer">
         <div id="weather-container">
