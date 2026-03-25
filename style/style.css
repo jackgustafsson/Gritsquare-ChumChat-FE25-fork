@@ -349,6 +349,16 @@ nav {
     z-index: 100;
   }
 
+  .footer{
+     max-width: 100%;
+  }
+
+  .chat-box{
+    width: 90%;
+  
+  }
+
+
   .menu.active {
     display: flex;
   }
@@ -455,3 +465,4 @@ nav {
     height: auto;
     display: block;
 }
+

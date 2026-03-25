@@ -42,15 +42,18 @@
         <div class="send-chat-container">
             <form class="send-message" id="form-post">
                 
-                <div id="emoji-list" style="display: none; margin-bottom: 8px; cursor: pointer; font-size: 20px; gap: 10px; background: rgba(0,0,0,0.05); padding: 5px; border-radius: 5px;">
-                    <span>😀</span><span>😂</span><span>😍</span><span>👍</span><span>🔥</span><span>🚀</span>
-                </div>
+               <select id="emoji-select">
+                <option value="😀">😀</option>
+                <option value="😂">😂</option>
+                <option value="😍">😍</option>
+                <option value="👍">👍</option>
+                <option value="🔥">🔥</option>
+                <option value="🚀">🚀</option>
+                </select>
+
 
                 <div style="display: flex; gap: 5px;">
-                    <input placeholder="Write a message..." type="text" name="message" class="message-area" id="message-input" style="flex-grow: 1;" />
-                    
-                    <button type="button" id="emoji-toggle-btn" style="cursor: pointer; background: none; border: 1px solid #ccc; border-radius: 5px; padding: 0 10px;">😊</button>
-                    
+                    <input placeholder="Write a message..." type="text" name="message" class="message-area" id="message-input" style="flex-grow: 1;" />  
                     <button type="submit" class="chat-send-button">Send</button>
                 </div>
             </form>
